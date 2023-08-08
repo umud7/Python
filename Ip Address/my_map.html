@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3a3d6819403c4e5cb3b3b49d288148be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3a3d6819403c4e5cb3b3b49d288148be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3a3d6819403c4e5cb3b3b49d288148be = L.map(
+                "map_3a3d6819403c4e5cb3b3b49d288148be",
+                {
+                    center: [44.49, 26.1734],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41078a14e653a8939726444bf5059877 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3a3d6819403c4e5cb3b3b49d288148be);
+        
+    
+            var circle_marker_f6f74d6c9be8cb7dfb61835cacaf42d3 = L.circleMarker(
+                [44.49, 26.1734],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_3a3d6819403c4e5cb3b3b49d288148be);
+        
+    
+        var popup_d511e1322328834240a9b3c10a679f6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec237690d15d6fe984ee6e3a2c2aee16 = $(`<div id="html_ec237690d15d6fe984ee6e3a2c2aee16" style="width: 100.0%; height: 100.0%;">Yorkshire</div>`)[0];
+                popup_d511e1322328834240a9b3c10a679f6d.setContent(html_ec237690d15d6fe984ee6e3a2c2aee16);
+            
+        
+
+        circle_marker_f6f74d6c9be8cb7dfb61835cacaf42d3.bindPopup(popup_d511e1322328834240a9b3c10a679f6d)
+        ;
+
+        
+    
+    
+            var marker_5895d75c0180c52461bf6bc3149f376b = L.marker(
+                [44.49, 26.1734],
+                {}
+            ).addTo(map_3a3d6819403c4e5cb3b3b49d288148be);
+        
+    
+        var popup_985442d2f3944836299b62e2ed398cf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f384af6643ebe9279a06b4cb94e7ca01 = $(`<div id="html_f384af6643ebe9279a06b4cb94e7ca01" style="width: 100.0%; height: 100.0%;">Yorkshire</div>`)[0];
+                popup_985442d2f3944836299b62e2ed398cf7.setContent(html_f384af6643ebe9279a06b4cb94e7ca01);
+            
+        
+
+        marker_5895d75c0180c52461bf6bc3149f376b.bindPopup(popup_985442d2f3944836299b62e2ed398cf7)
+        ;
+
+        
+    
+</script>
+</html>
